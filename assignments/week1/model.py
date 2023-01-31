@@ -1,5 +1,4 @@
 import numpy as np
-import torch
 
 
 class LinearRegression:
@@ -71,26 +70,15 @@ class GradientDescentLinearRegression(LinearRegression):
             None
         """
 
-        X = torch.tensor(X, dtype=torch.double)
-        y = torch.tensor(y, dtype=torch.double)
-
-        w = torch.tensor(np.zeros(X.shape[1]), requires_grad=True)
-        b = torch.tensor(1.0, requires_grad=True)
+        self.w = np.zeros(X.shape[1])
 
         for epoch in range(epochs):
-            y_pred = X @ w + b
-            loss = torch.mean((y_pred - y) ** 2)
+            y_pred = self.predict(X)
+            w_grad = np.mean(np.dot(y_pred - y, self.w))
+            b_grad = y_pred - y
 
-            loss.backward()
-
-            with torch.no_grad():
-                w -= lr * w.grad
-                b -= lr * b.grad
-                w.grad.zero_()
-                b.grad.zero_()
-
-        self.w = w.detach().numpy()
-        self.b = b.detach().numpy()
+            self.w -= lr * w_grad
+            self.b -= lr * b_grad
 
     def predict(self, X: np.ndarray) -> np.ndarray:
         """
