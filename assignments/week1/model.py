@@ -61,7 +61,7 @@ class GradientDescentLinearRegression(LinearRegression):
         """
         Use gradient descent to fit the model based on the given input.
 
-        Arguments: 
+        Arguments:
             X (np.ndarray): input data
             y (np.ndarray): input data
             lr (float): learning rate
@@ -79,7 +79,7 @@ class GradientDescentLinearRegression(LinearRegression):
 
         for epoch in range(epochs):
             y_pred = X @ w + b
-            loss = torch.mean((y_pred - y)**2)
+            loss = torch.mean((y_pred - y) ** 2)
 
             loss.backward()
 
@@ -91,7 +91,6 @@ class GradientDescentLinearRegression(LinearRegression):
 
         self.w = w.detach().numpy()
         self.b = b.detach().numpy()
-
 
     def predict(self, X: np.ndarray) -> np.ndarray:
         """
