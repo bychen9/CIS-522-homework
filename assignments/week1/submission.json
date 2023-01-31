@@ -2,13 +2,17 @@
     "assignment_name": "Assignment 1",
     "contributors": [
         {
-            "name": "Jordan Matelsky",
-            "pennkey": "matelsky"
+            "name": "Brian Chen",
+            "pennkey": "bychen9"
+        },
+        {
+            "name": "Yidi Huang",
+            "pennkey": "yidih"
         }
     ],
     "sources": [
-        "https://example.com",
-        "Conversations with TA (include TA's name)",
-        "LLM (include information about the LLM and how it was used)"
+        "https://colab.research.google.com/drive/1RgQK178nx2epNcGDSHFV-xduMEt07Jep?usp=sharing",
+        "CIS 522 W2 D1 Tutorial",
+        "Gradient Descent for Linear Regression"
     ]
 }
