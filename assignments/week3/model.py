@@ -1,8 +1,6 @@
 from typing import Callable
 import torch
 import torch.nn as nn
-import torch.optim as optim
-from torch.utils.data import DataLoader, TensorDataset
 
 
 class MLP(nn.Module):
