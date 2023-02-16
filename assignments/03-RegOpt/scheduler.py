@@ -1,6 +1,7 @@
 from typing import List
 
 from torch.optim.lr_scheduler import _LRScheduler
+import numpy as np
 
 
 class CustomLRScheduler(_LRScheduler):
@@ -20,5 +21,4 @@ class CustomLRScheduler(_LRScheduler):
         # this function (because it is called internally by Torch)
 
         # ... Your Code Here ...
-        # Here's our dumb baseline implementation:
-        return [i for i in self.base_lrs]
+        return [np.random.random() * 0.002]

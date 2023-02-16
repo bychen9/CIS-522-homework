@@ -2,8 +2,12 @@
     "assignment_name": "RegOpt",
     "contributors": [
         {
-            "name": "Change this to your name",
-            "pennkey": "MyPennKey"
+            "name": "Jiarong Qi",
+            "pennkey": "jiarongq"
+        },
+        {
+            "name": "Brian Chen",
+            "pennkey": "bychen9"
         }
     ],
     "sources": [
