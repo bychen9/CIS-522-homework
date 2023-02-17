@@ -5,6 +5,10 @@ import numpy as np
 
 
 class CustomLRScheduler(_LRScheduler):
+    """
+    A Custom Learning Rate Scheduler
+    """
+
     def __init__(self, optimizer, last_epoch=-1):
         """
         Create a new scheduler.
@@ -17,6 +21,11 @@ class CustomLRScheduler(_LRScheduler):
         super(CustomLRScheduler, self).__init__(optimizer, last_epoch)
 
     def get_lr(self) -> List[float]:
+        """
+        Arguments: None
+        Returns: A list with learning rates
+        """
+
         # Note to students: You CANNOT change the arguments or return type of
         # this function (because it is called internally by Torch)
 
