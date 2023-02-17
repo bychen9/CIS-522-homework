@@ -30,4 +30,4 @@ class CustomLRScheduler(_LRScheduler):
         # this function (because it is called internally by Torch)
 
         # ... Your Code Here ...
-        return [0.002 * (np.cos(self.last_epoch / 100) + 1)]
+        return [0.002 / (1 + 0.001 * self.last_epoch)]
