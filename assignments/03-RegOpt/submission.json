@@ -11,6 +11,7 @@
         }
     ],
     "sources": [
-        "ESE5460 HW4: the cosine learning rate schedule with a warmup"
+        "ESE5460 HW4: the cosine learning rate schedule with a warmup",
+        "https://pytorch.org/docs/stable/optim.html"
     ]
 }

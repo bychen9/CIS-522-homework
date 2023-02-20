@@ -17,7 +17,7 @@ class CONFIG:
         "num_batches": 600,
         "num_epochs": num_epochs,
         "initial_learning_rate": initial_learning_rate,
-        "eta_max": 0.003,
+        "eta_max": 0.002,
         "gamma": 0.98,
     }
 
