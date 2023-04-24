@@ -21,6 +21,9 @@ seed = 522
 
 
 class Agent:
+    """
+    Agent
+    """
     def __init__(
         self, action_space: gym.spaces.Discrete, observation_space: gym.spaces.Box
     ):
@@ -60,6 +63,9 @@ class Agent:
         return policy_fn(self.q_net, state)
 
     def act(self, observation: gym.spaces.Box) -> gym.spaces.Discrete:
+        """
+        Act
+        """
         # # self.qnet.eval()
         # self.eps = max(EPSILON_END, self.eps * DECAY_RATE)
         # if torch.rand(1) < self.eps:
