@@ -86,7 +86,6 @@ class Agent:
             self.replay_buffer.add(
                 self.prev_obs, self.prev_action, self.prev_reward, GAMMA, observation
             )
-            print(self.epsilon)
             return
 
         if self.prev_obs is None:
