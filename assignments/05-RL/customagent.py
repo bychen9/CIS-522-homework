@@ -82,6 +82,9 @@ class Agent:
         terminated: bool,
         truncated: bool,
     ) -> None:
+        """
+        Learn
+        """
         if terminated or truncated:
             self.replay_buffer.add(
                 self.prev_obs, self.prev_action, self.prev_reward, GAMMA, observation
