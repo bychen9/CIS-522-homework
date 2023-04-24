@@ -2,8 +2,12 @@
     "assignment_name": "RL",
     "contributors": [
         {
-            "name": "Change this to your name",
-            "pennkey": "MyPennKey"
+            "name": "Brian Chen",
+            "pennkey": "bychen9"
+        },
+        {
+            "name": "Kebin Yan",
+            "pennkey": "yankebin"
         }
     ],
     "sources": [
