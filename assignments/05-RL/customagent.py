@@ -24,6 +24,7 @@ class Agent:
     """
     Agent
     """
+
     def __init__(
         self, action_space: gym.spaces.Discrete, observation_space: gym.spaces.Box
     ):
