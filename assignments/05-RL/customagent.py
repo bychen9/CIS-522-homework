@@ -10,9 +10,9 @@ from typing import NamedTuple
 GAMMA = 0.99  # discount factor
 TAU = 1e-3
 EPSILON_START = 1
-DECAY_RATE = 0.9995
+DECAY_RATE = 0.999
 EPSILON_END = 0.1
-BATCH_SIZE = 32
+BATCH_SIZE = 64
 LR = 1e-5
 UPDATE_EVERY = 1
 BUFFER_SIZE = 100000
